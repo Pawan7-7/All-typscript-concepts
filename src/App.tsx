@@ -1,7 +1,11 @@
 import React from "react";
-
+import { Greet } from "./components/Greet";
 function App() {
-  return <div>Helllo</div>;
+  return (
+    <div>
+      <Greet name="Dr. Nepson" />
+    </div>
+  );
 }
 
 export default App;
