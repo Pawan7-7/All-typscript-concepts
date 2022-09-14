@@ -1,4 +1,5 @@
 import { Greet } from "./components/Greet";
+import { Heading } from "./components/Heading";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
@@ -19,7 +20,8 @@ function App() {
       <Greet name="Dr. Nepson" messageCount={69} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={personNameList} />
-      <Status status="loas" />
+      <Status status="error" />
+      <Heading>This will be heading!!!</Heading>
     </div>
   );
 }
