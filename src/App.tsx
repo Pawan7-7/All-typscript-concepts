@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div>
-      <Greet name="Dr. Nepson" messageCount={69} isLoggedIn={true} />
+      <Greet name="Dr. Nepson" isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={personNameList} />
       <Status status="error" />
