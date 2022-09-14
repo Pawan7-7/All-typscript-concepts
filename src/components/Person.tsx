@@ -1,15 +1,15 @@
 import React from "react";
-type personProps = {
+interface personProps {
   name: {
     first: string;
     last: string;
   };
-};
-export const Person = (props: personProps) => {
+}
+export const Person = ({ name }: personProps) => {
   return (
     <div>
-      {props.name.first}
-      {props.name.last}
+      {name.first}
+      {name.last}
     </div>
   );
 };

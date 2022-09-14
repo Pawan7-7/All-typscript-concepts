@@ -1,6 +1,8 @@
 import { Greet } from "./components/Greet";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
+import { Status } from "./components/Status";
+
 function App() {
   const personName = {
     first: "Logan",
@@ -17,6 +19,7 @@ function App() {
       <Greet name="Dr. Nepson" messageCount={69} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={personNameList} />
+      <Status status="loading" />
     </div>
   );
 }
