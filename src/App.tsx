@@ -1,8 +1,10 @@
+import { Button } from "./components/Button";
 import { Greet } from "./components/Greet";
 import { Heading } from "./components/Heading";
 import { Nepson } from "./components/Nepson";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
+import { Logged } from "./components/state/Logged";
 import { Status } from "./components/Status";
 
 function App() {
@@ -18,7 +20,8 @@ function App() {
 
   return (
     <div>
-      <Greet name="Dr. Nepson" isLoggedIn={true} />
+      <Logged />
+      {/* <Greet name="Dr. Nepson" isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={personNameList} />
       <Status status="error" />
@@ -28,6 +31,11 @@ function App() {
           This is new heading this is also component and children of componet
         </Heading>
       </Nepson>
+      <Button
+        handleClick={() => {
+          console.log("Clicked");
+        }}
+      /> */}
     </div>
   );
 }
