@@ -5,6 +5,7 @@ import { Nepson } from "./components/Nepson";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import { Logged } from "./components/state/Logged";
+import { User } from "./components/state/User";
 import { Status } from "./components/Status";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div>
+      <User />
       {/* <Logged /> */}
       {/* <Greet name="Dr. Nepson" isLoggedIn={true} />
       <Person name={personName} />
