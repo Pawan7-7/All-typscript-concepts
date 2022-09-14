@@ -19,7 +19,7 @@ function App() {
       <Greet name="Dr. Nepson" messageCount={69} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={personNameList} />
-      <Status status="loa" />
+      <Status status="loas" />
     </div>
   );
 }
